@@ -1,0 +1,12 @@
+langchain
+langchain-core
+langchain-openai
+langchain-community
+langchain-qdrant
+langchain-text-splitters
+langgraph
+qdrant-client
+streamlit
+python-dotenv
+pandas
+openai
