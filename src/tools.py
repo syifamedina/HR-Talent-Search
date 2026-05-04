@@ -2,6 +2,11 @@ import os
 from langchain_core.tools import tool
 from langchain_openai import OpenAIEmbeddings
 from langchain_qdrant import QdrantVectorStore
+from dotenv import load_dotenv
+import os
+
+from pathlib import Path
+load_dotenv(Path(__file__).parent.parent / '.env')
 
 def get_vectorstore():
     embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
