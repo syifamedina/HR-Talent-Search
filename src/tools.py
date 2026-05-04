@@ -51,7 +51,7 @@ def filter_by_category(category: str, keyword: str = "") -> str:
     results = vectorstore.similarity_search(
         query,
         k=5,
-        filter={"must": [{"key": "metadata.category", "match": {"value": category}}]}
+        filter={"must": [{"key": "category", "match": {"value": category}}]}
     )
     
     if not results:
